@@ -1,6 +1,7 @@
 var toggleOpen = document.getElementById('toggleOpen');
 var toggleClose = document.getElementById('toggleClose');
 var collapseMenu = document.getElementById('collapseMenu');
+var menuList = document.getElementById('menuList');
 
 function handleClick() {
   if (collapseMenu.style.display === 'block') {
@@ -12,3 +13,5 @@ function handleClick() {
 
 toggleOpen.addEventListener('click', handleClick);
 toggleClose.addEventListener('click', handleClick);
+menuList.addEventListener('click', handleClick);
+
