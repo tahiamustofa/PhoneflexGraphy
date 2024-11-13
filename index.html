@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- swipper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- icon       -->
+    <script src="https://kit.fontawesome.com/9710cf8566.js" crossorigin="anonymous"></script>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="m-0 p-0 poppins">
+   
+<!-- nav  -->
+<header class=' bg-white px-10 py-5  
+tracking-wide relative '>
+  <div class='flex flex-wrap items-center max-xl:gap-y-6 max-sm:gap-x-4'>
+    <a href="javascript:void(0)" class="text-3xl md:text-md font-bold text-[#4E2FDA] tracking-wide">
+     <div class="flex items-center">
+       
+       <img src="img/Group 52310.png" alt="logo" class="" />
+      
+     </div>
+    </a>
+
+    <div id="collapseMenu"
+      class="max-xl:hidden xl:!flex xl:items-center max-xl:before:fixed max-xl:before:bg-black max-xl:before:opacity-40 max-xl:before:inset-0 max-xl:before:z-50">
+      <button id="toggleClose" class='xl:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+          <path
+            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+            data-original="#000000"></path>
+          <path
+            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+            data-original="#000000"></path>
+        </svg>
+      </button>
+
+      <ul
+        class='xl:flex xl:gap-x-10 xl:absolute xl:left-[42%] xl:-translate-x-1/2 max-xl:space-y-3 max-xl:fixed max-xl:bg-white max-xl:w-2/3 max-xl:min-w-[300px] max-xl:top-0 max-xl:left-0 max-xl:px-10 max-xl:py-4 max-xl:h-full max-xl:shadow-md max-xl:overflow-auto z-50'>
+        
+
+        <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+          <a href='#about'
+            class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+            About us</a>
+        </li>
+        <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+            <a href='#about'
+              class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+              Community</a>
+          </li>
+          <li class='flex flex-shrink max-xl:border-b max-xl:py-3'>
+            <a href='#about'
+              class='text-[#292929] hover:text-[#fbbc05]  text-2xl  block font-medium'>
+              Privacy</a>
+          </li>
+      </ul>
+    </div>
+
+    <div class='flex items-center ml-auto space-x-8'>
+
+        <div class="flex gap-2 justify-center items-center">
+            <!-- App Store Button -->
+            <div class="sm:w-auto max-w-[50%]">
+                <a href="https://apps.apple.com" target="_blank"
+                    class="flex md:gap-2 gap-1 items-center md:px-4 px-1 py-1  rounded-xl border-2 border-[#292929] hover:bg-sky-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sm:w-6 w-5 sm:h-6 h-5 text-[#292929]" viewBox="0 0 384 512"
+                        fill="currentColor">
+                        <path
+                            d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z" />
+                    </svg>
+    
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="md:text-xs text-[10px] text-[#232323]">Download on the </span>
+                        <div class="text-[#292929] font-semibold md:text-base text-xs">App Store</div>
+                    </div>
+                </a>
+            </div>
+            <!-- Google Play Button -->
+            <div class="sm:w-auto max-w-[50%]">
+                <a href="https://apps.apple.com" target="_blank"
+                    class="flex md:gap-2 gap-1 items-center md:px-4 px-1 py-1  rounded-xl border-2 border-[#292929] hover:bg-sky-300">
+                    <div><i class="fa-brands fa-google-play text-[#292929]"></i></div>
+    
+                    <div class="flex flex-col justify-start items-start">
+                        <span class="md:text-xs text-[10px] text-[#232323]">Download on the </span>
+                        <div class="text-[#292929] font-semibold md:text-base text-xs">Play Store</div>
+                    </div>
+                </a>
+            </div>
+           
+        </div>
+      
+      <button id="toggleOpen" class='xl:hidden'>
+        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+ 
+</header>
+    <main>
+        <!-- banner  -->
+        <section class="container mx-auto bg-[#D4F0ED] rounded-[60px] relative px-10 md:py-20 xl:py-20 md:pb-0 py-10">
+            <div class="flex items-center xl:flex-row flex-col gap-10 md:gap-0 xl:space-y-10 xl:py-20">
+                <div class="space-y-4 xl:space-y-10 flex flex-col justify-center xl:justify-start">
+                    <h1 class="md:text-[113px] sm:text-6xl text-4xl font-bold xl:max-w-20  fahkwang flex xl:text-left text-center justify-center xl:justify-start">SMASHY <br> OUR
+                       <br>  LIMITS</h1>
+                    <p class="text-3xl text-[#aaaaaa] font-medium xl:max-w-lg text-center xl:text-left">Plan to be bigger, stronger, and more athletic</p>
+                    <div class="flex gap-5 justify-center xl:justify-start md:flex-row flex-col">
+                        <button class="flex justify-center gap-1 uppercase px-6 py-2 bg-[#ff5771]
+                   text-white rounded-xl font-medium">
+                            Book a Demo</button>
+                        <button class="flex justify-center gap-1 uppercase px-6 py-2 bg-[#ffe695]
+                   text-black rounded-xl font-medium">
+                            Contact Us</button>
+                    </div>
+                </div>
+                <div class="xl:absolute relative md:mx-auto md:-bottom-10 xl:right-20 xl:top-20">
+                    <img src="img/Copy this.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+        <!-- meet  -->
+        <section class="container mx-auto 2xl:px-20 xl:px-0 my-10 xl:mt-48 md:mt-16 space-y-10">
+            <div class="text-center space-y-5 mx-auto md:px-0 px-2">
+                <h1 class="lg:text-7xl md:text-4xl text-2xl font-semibold text-[#292929]">Meet training. Take challenges.</h1>
+                <p class="text-[#616161] md:max-w-3xl max-w-lg mx-auto lg:text-3xl text-xl">Lorem ipsum dolor sit amet consectetur. Egestas
+                    mauris
+                    habitasse adipiscing massa parturient.
+                    Sagittis porttitor porta sed lacus</p>
+                <div class="flex gap-5 md:flex-row flex-col justify-center items-center">
+                    <button class="uppercase md:px-6 px-2 py-2 bg-[#ff5771]
+               text-white rounded-xl font-semibold md:w-auto w-1/2">
+                        Download app</button>
+                    <button class="flex gap-2 uppercase px-6 py-2 
+               text-[#000000] rounded-xl font-semibold">
+                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.5 11.9019C25.5 13.0566 25.5 15.9434 23.5 17.0981L4.74999 27.9234C2.74999 29.0781 0.249999 27.6347 0.249999 25.3253L0.25 3.67468C0.25 1.36528 2.75 -0.0780944 4.75 1.07661L23.5 11.9019Z"
+                                fill="#0F20B3" />
+                        </svg>
+
+                        Demo training</button>
+                </div>
+            </div>
+
+            <div class="flex xl:gap-0 md:gap-5 gap-5 flex-col xl:flex-row">
+                <div class="flex flex-col xl:justify-end xl:items-start items-center xl:mb-10 mb-0 space-y-4">
+                    <div class="text-left flex xl:justify-start justify-center xl:items-start items-center xl:mr-auto">
+                        <img src="img/Vector.png" alt="" class="text-left">
+                    </div>
+                    <h4 class="text-2xl font-semibold max-w-60 text-[#000000]">Analyze: Visualize your results</h4>
+                    <p class="text-[#353535] max-w-60 ">fitbro visualizes your workout result to quickly seehow much
+                        more you can lift or how much more timeyou’re spending in the gym.</p>
+                </div>
+                <div class="flex relative xl:mx-0 mx-auto lg:p-0 md:px-10 px-5 lg:my-0 lg:mb-0">
+                    <div>
+                        <img src="img/Copy this-2.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="img/copy3.png" class="lg:absolute relative top-0 lg:right-[30%]" alt="">
+                    </div>
+                    <div>
+                        <img src="img/Copy this-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex flex-col xl:justify-end xl:items-start items-center lg:-mt-10 -mt-5 lg:pt-0 xl:mb-10 mb-0 space-y-4">
+                    <div class="text-left flex xl:justify-start justify-center xl:items-start items-center xl:mr-auto">
+                        <img src="img/Vector.png" alt="" class="text-left">
+                    </div>
+                    <h4 class="text-2xl font-semibold max-w-60 text-[#000000]">Analyze: Visualize your results</h4>
+                    <p class="text-[#353535] max-w-60 ">fitbro visualizes your workout result to quickly seehow much
+                        more you can lift or how much more timeyou’re spending in the gym.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- workout  -->
+        <section class="container mx-auto md:px-10 px-5 lg:my-10 my-4">
+            <div class="flex items-center lg:flex-row flex-col gap-1">
+                <div class="space-y-6 flex-1">
+                    <h1 class="font-semibold xl:text-7xl md:text-5xl text-2xl text-[#292929] text-center lg:text-left">Make workout boredom a thing of the past</h1>
+                    <p class="md:text-3xl text-lg text-[#616161] font-medium text-center lg:text-left">Lorem ipsum dolor sit amet consectetur. Egestas
+                        mauris habitasse adipiscing massa parturient.
+                        Sagittis porttitor porta sed lacus</p>
+                    <button class="flex mx-auto lg:mx-0 gap-1 uppercase px-6 py-2 bg-[#ff5771]
+               text-white rounded-xl font-semibold transition hover:animate-bounce delay-75">
+                        Browse our workouts</button>
+                </div>
+                <div class="flex-1">
+                    <img src="img/image 10.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Expert -->
+        <section class="container mx-auto xl:my-10 my-4">
+            <div class="flex items-center bg-[#292929] md:flex-row flex-col-reverse">
+                <div class="flex-1 shadow">
+                    <img src="img/trainer 1.png" alt="">
+                </div>
+                <div class="space-y-6 flex-1 px-5 md:py-0 py-5">
+                    <h1 class="font-semibold xl:text-7xl lg:text-5xl md:text-3xl text-2xl text-[#ffffff]">Expert trainers guide you through every workout
+                    </h1>
+                    <p class="lg:text-3xl text-lg text-[#f2f2f2] font-medium">
+                        Our trainers give you techniques, tips, and encouragement for real results at any level.
+                    </p>
+                    <button class="flex gap-1 uppercase px-6 py-2 bg-[#ff5771]
+               text-white rounded-xl font-semibold">
+                        Meet our trainers</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- training  -->
+        <section class="container mx-auto md:px-10 px-5 xl:my-10 my-4">
+            <div class="flex xl:items-center mx-auto xl:justify-center gap-0 xl:flex-row flex-col">
+                <div class="xl:mx-0 mx-auto"><img src="img/image 11.png" alt="" class="xl:mx-0 mx-auto"></div>
+                
+                <div class="flex xl:items-end xl:ml-0 xl:pl-0 xl:mt-32 xl:mx-0 mx-auto">
+                    <img src="img/Stylish golden watch on a white surface.png" class="xl:h-1/2 h-auto" alt="">
+                </div>
+            </div>
+            <div class="mx-auto space-y-6 text-center">
+                <h1 class="font-semibold lg:text-7xl md:text-5xl text-2xl text-[#292929]">Your Training. Any Device.</h1>
+                <p class="md:text-3xl text-lg font-semibold text-[#616161] text-center max-w-3xl mx-auto">Strong is available on
+                    iPhone, Android, and Apple Watch.
+                    Access your training from any device and never miss a workout.Privacy and permissions are fully
+                    under your control.
+
+                    <br><br> Export your data any time.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                    <!-- App Store Button -->
+                    <div class="sm:w-auto w-[55%]">
+                        <a href="https://apps.apple.com" target="_blank"
+                            class="flex gap-2 items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 384 512"
+                                fill="currentColor">
+                                <path
+                                    d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z" />
+                            </svg>
+
+                            <div class="flex flex-col justify-start items-start">
+                                <span class="text-xs">Download on the </span>
+                                <div>App Store</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Google Play Button -->
+                    <div class="sm:w-auto w-[55%]">
+                        <a href="https://play.google.com/store" target="_blank"
+                            class="flex gap-2 items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
+                            <div>
+                                <i class="fa-brands fa-google-play  text-yellow-500"></i>
+                            </div>
+                            <div class="flex flex-col justify-start items-start">
+                                <span class="text-xs">Get it on </span>
+                                <div>Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form -->
+        <section class="container mx-auto md:px-10 px-5 xl:mt-10 xl:mb-5 my-4 flex justify-center">
+            <div class="space-y-6 mx-auto flex flex-col justify-center">
+                <h1 class="md:text-5xl text-2xl text-[#292929] text-left flex justify-start">Subscribe to get more fitness
+                    information</h1>
+                <p class="md:text-3xl text-lg font-light text-[#292929] text-left flex justify-start items-start">We'll send you
+                    curated fitness information every
+                    week!</p> 
+                <form>
+                    <div class="flex poppins sm:flex-row flex-col mx-auto">
+                        <div class="xl:w-3/4 w-full">
+                            <label for="email" class="block text-xl font-light text-[#0b0b0b]">Email *</label>
+                            <input type="email" name="email" id="email" placeholder="e.g., email@example.com"
+                                class="mt-1 block xl:w-full w-full px-3 py-2 bg-[#fff5dd] border border-[#fff5dd] shadow-sm focus:outline-none focus:ring-[#ff5771] focus:border-[#ff5771] md:text-xl sm:text-sm"
+                                required>
+                        </div>
+                        <div class="mt-1 flex sm:items-end sm:mx-0 mx-auto sm:justify-start justify-center xl:w-auto lg:w-1/2 w-4/5">
+                            <button type="submit"
+                                class="items-center px-6 py-2 bg-[#ff5771] border border-transparent font-medium text-white hover:text-black hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff5771] md:text-lg sm:text-sm">Join
+                                Our Mailing List</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#08003b] via-[#08003b] to-[#08003b] py-12 px-10 poppins tracking-wide">
+        <div class="flex md:gap-8 sm:gap-3 gap-5 justify-between sm:flex-row flex-col">
+
+            <div
+                style="background-image: url(img/Ellipse\ 3.png); background-position:top-left; background-repeat: no-repeat; background-size:contain;">
+                <div class="space-y-2 max-w-lg py-5">
+                    <h4 class="text-white font-semibold md:text-4xl text-2xl lg:max-w-sm">Quotient is available
+                        for all devices</h4>
+                    <p class="text-[#9e9baa] md:text-xl text-lg lg:max-w-sm max-w-xl">
+                        Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium pellentesque. Ornare in arcu
+                        elit
+                        quisque.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-2 justify-start">
+                        <!-- Google Play Button -->
+                        <div class="">
+                            <a href="https://play.google.com/store" target="_blank"
+                                class="flex gap-2 items-center px-4 py-2 border text-white rounded-full hover:bg-pink-800">
+                                <div>
+                                    <i class="fa-brands fa-google-play  text-white"></i>
+                                </div>
+                                <div class="flex flex-col justify-start items-start">
+
+                                    <div>Google Play</div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- App Store Button -->
+                        <div class="">
+                            <a href="https://apps.apple.com" target="_blank"
+                                class="flex gap-2 items-center px-4 py-2 border text-white rounded-full hover:bg-pink-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 384 512"
+                                    fill="currentColor">
+                                    <path
+                                        d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z" />
+                                </svg>
+
+                                <div class="flex flex-col justify-start items-start">
+
+                                    <div>App Store</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="relative flex items-end justify-end">
+                    <img src="img/iPhone-13-Pro-Front.png" alt="" class="z-20 md:-mr-[50%] sm:-mr-[80%] lg:mb-0 sm:mb-10 -mr-10 mb-5">
+                    <div class="absolute top-24 -right-28">
+                        <img src="img/Polygon 5.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/Polygon 4.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="flex justify-between xl:gap-32 gap-4 sm:flex-row flex-col mt-10 mb-3">
+            <div class="max-w-sm flex-1">
+                <h1 class="text-white font-semibold text-2xl">Blackrise Themes Inc</h1>
+                <p class="text-[#9e9baa] max-w-80">Lorem ipsum dolor sit amet consectetur. Pulvinar nunc amet pretium
+                    pellentesque.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-1 lg:gap-4 gap-6  flex-1">
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Home</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Product</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Business</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Enterprise</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Customer
+                                Success</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">About Us</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Company</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Leadership</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Careers</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover:text-white text-[#9e9baa] text-[15px]">Diversity</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Resourcses</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">App
+                                Guide</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Forum</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Support</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">App
+                                Directory</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Events</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-2">Tutorial</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">10
+                                Leadership styles</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">Executive
+                                Summary Tips</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">What are
+                                OkRS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="hover:text-white text-[#9e9baa] text-[15px]">See all
+                                Guides</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-[#fbbc05] my-1" />
+        <div class="my-2 sm:px-12 px-2 flex flex-wrap sm:justify-between gap-6 relative z-20">
+            <div class="flex space-x-5">
+                <a href="javascript:void(0)" class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.88346 8.40201L9.32683 5.69878H6.55468V3.94457C6.55468 3.20502 6.94192 2.48414 8.18349 2.48414H9.44375V0.182627C9.44375 0.182627 8.3001 0 7.20664 0C4.92368 0 3.43144 1.29473 3.43144 3.63854V5.69878H0.893753V8.40201H3.43144V14.9369H6.55468V8.40201H8.88346Z"
+                            fill="#FBBC05" />
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.3567 2.42893C12.3649 2.53553 12.3649 2.64214 12.3649 2.74874C12.3649 6 9.72013 9.74622 4.88631 9.74622C3.39711 9.74622 2.0137 9.34264 0.850006 8.64217C1.06159 8.66499 1.26502 8.67261 1.48475 8.67261C2.71352 8.67261 3.84468 8.2843 4.74797 7.62186C3.59241 7.59901 2.62402 6.89089 2.29037 5.91626C2.45314 5.93909 2.61588 5.95432 2.78679 5.95432C3.02277 5.95432 3.25879 5.92385 3.47849 5.87058C2.27411 5.64213 1.3708 4.65229 1.3708 3.45686V3.42641C1.72071 3.60915 2.12763 3.72337 2.55889 3.73858C1.85091 3.29694 1.38708 2.54314 1.38708 1.69034C1.38708 1.2335 1.51726 0.814714 1.74513 0.449228C3.03903 1.94162 4.98396 2.91622 7.16484 3.02284C7.12416 2.8401 7.09974 2.64976 7.09974 2.4594C7.09974 1.10405 8.27158 0 9.72822 0C10.485 0 11.1686 0.296954 11.6487 0.776651C12.2428 0.670057 12.8124 0.464463 13.317 0.182743C13.1216 0.753823 12.7066 1.23352 12.1614 1.53807C12.6904 1.48479 13.203 1.34771 13.675 1.15737C13.317 1.64466 12.8694 2.07866 12.3567 2.42893Z"
+                            fill="#FBBC05" />
+                    </svg>
+
+                </a>
+                <a href="javascript:void(0)" class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.81449 11.9997H1.1556V3.98813H3.81449V11.9997ZM2.48361 2.89527C1.63339 2.89527 0.943756 2.23634 0.943756 1.4408C0.943756 1.05868 1.10599 0.692205 1.39477 0.422002C1.68355 0.151798 2.07522 0 2.48361 0C2.89201 0 3.28368 0.151798 3.57246 0.422002C3.86124 0.692205 4.02347 1.05868 4.02347 1.4408C4.02347 2.23634 3.33356 2.89527 2.48361 2.89527ZM13.7659 11.9997H11.1127V8.09973C11.1127 7.17027 11.0927 5.9783 9.73031 5.9783C8.3479 5.9783 8.13606 6.98813 8.13606 8.03277V11.9997H5.48003V3.98813H8.03014V5.08098H8.06736C8.42233 4.45152 9.28945 3.78723 10.5831 3.78723C13.2741 3.78723 13.7688 5.44527 13.7688 7.59884V11.9997H13.7659Z"
+                            fill="#FBBC05" />
+                    </svg>
+                </a>
+                <a href="javascript:void(0)" class="bg-white p-2 rounded-full hover:bg-black text-base transition-all">
+                    <svg width="14" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.45167 3.40982C6.32871 3.40982 4.61633 5.01206 4.61633 6.99845C4.61633 8.98485 6.32871 10.5871 8.45167 10.5871C10.5746 10.5871 12.287 8.98485 12.287 6.99845C12.287 5.01206 10.5746 3.40982 8.45167 3.40982ZM8.45167 9.33153C7.07976 9.33153 5.9582 8.28524 5.9582 6.99845C5.9582 5.71167 7.07642 4.66537 8.45167 4.66537C9.82692 4.66537 10.9451 5.71167 10.9451 6.99845C10.9451 8.28524 9.82358 9.33153 8.45167 9.33153ZM13.3385 3.26303C13.3385 3.7284 12.9379 4.10006 12.4439 4.10006C11.9465 4.10006 11.5493 3.72527 11.5493 3.26303C11.5493 2.80079 11.9499 2.42599 12.4439 2.42599C12.9379 2.42599 13.3385 2.80079 13.3385 3.26303ZM15.8787 4.11256C15.8219 2.99131 15.5482 1.99811 14.6703 1.17981C13.7958 0.361518 12.7343 0.10541 11.536 0.0491914C10.3009 -0.0163971 6.59909 -0.0163971 5.36404 0.0491914C4.16904 0.102287 3.10756 0.358394 2.22967 1.17669C1.35178 1.99498 1.08141 2.98818 1.02132 4.10943C0.951226 5.26504 0.951226 8.72874 1.02132 9.88435C1.07807 11.0056 1.35178 11.9988 2.22967 12.8171C3.10756 13.6354 4.1657 13.8915 5.36404 13.9477C6.59909 14.0133 10.3009 14.0133 11.536 13.9477C12.7343 13.8946 13.7958 13.6385 14.6703 12.8171C15.5449 11.9988 15.8186 11.0056 15.8787 9.88435C15.9488 8.72874 15.9488 5.26816 15.8787 4.11256ZM14.2831 11.1243C14.0228 11.7364 13.5187 12.2081 12.8611 12.4548C11.8764 12.8202 9.53985 12.7359 8.45167 12.7359C7.36349 12.7359 5.02356 12.8171 4.0422 12.4548C3.38795 12.2112 2.88392 11.7396 2.62022 11.1243C2.22967 10.2029 2.3198 8.01663 2.3198 6.99845C2.3198 5.98027 2.23301 3.79086 2.62022 2.87262C2.88058 2.26046 3.38461 1.78885 4.0422 1.54211C5.0269 1.17669 7.36349 1.26102 8.45167 1.26102C9.53985 1.26102 11.8798 1.17981 12.8611 1.54211C13.5154 1.78573 14.0194 2.25734 14.2831 2.87262C14.6737 3.79398 14.5835 5.98027 14.5835 6.99845C14.5835 8.01663 14.6737 10.206 14.2831 11.1243Z"
+                            fill="#FBBC05" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="flex gap-9 justify-center items-center">
+                <p class='text-[#848487] text-sm'>Term & Conditions</p>
+                <p class='text-[#848487] text-sm'>Privacy Policy
+                </p>
+                <p class='text-[#848487] text-sm'>Cookies</p>
+            </div>
+
+        </div>
+    </footer>
+<!-- nav js  -->
+<script src="nav.js"></script>
+</body>
+
+</html>
