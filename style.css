@@ -7,6 +7,19 @@
     font-family: "Poppins", sans-serif;
     
   }
+  .heroBG {
+    background-image: url(img/Rectangle\ 1.png); 
+    background-repeat: no-repeat;
+     background-position:center; 
+        background-size:contain; }
+        
+            @media screen and (max-width:768px) {
+              .heroBG {
+               background-size:cover; 
+               width: 700px;
+               height: 600px; }      
+             }    
+                
 .count{
   animation: scrolling 20s linear infinite;
 }
