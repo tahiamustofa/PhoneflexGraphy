@@ -22,15 +22,6 @@ swiper-slide img {
   display: flex;
   justify-content: center;
   align-items: center;
- animation: animationX 20s linear alternate;
+ 
 }
-@keyframes animationX {
 
-  0% {
-      transform: translateX(80%);
-  }
-
-  100% {
-      transform: translateX(-20%);
-  }
-}
